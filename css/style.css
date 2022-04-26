@@ -1,0 +1,771 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+ @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+ @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+ @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+ @import url(font-awesome.min.css);
+ @import url(owl.carousel.min.css);
+/*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
+ body {
+     color: #666666!important;
+     font-size: 14px;
+     font-family: 'poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+/*---------------------------------------------------------------------  navigation bar------------------------------------------------------------*/
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+.nav-link{
+    font-stretch:extra-expanded;
+}
+.navbar{
+    background-color: darkgreen;
+    
+}
+.nav-item{
+ margin-left:10px;
+ margin-right:10px;
+ border-radius:8%;
+ padding: 1px 10px;
+ 
+}
+.nav-item:hover{
+    background-color: lightgreen;
+}
+.btn{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:2px solid greenyellow;
+    padding: 4px 30px ;
+    margin:10px 0px 10px 0px;
+    position: relative;
+    display: inline;
+    align-items: center;
+}
+.btn:hover{
+    border:2px solid orange!important;
+    padding: 7px 35px ;
+}
+/*-------------------------------------pop up login form------------------------------------------------------------*/
+.modal-box{ font-family: 'Poppins', sans-serif; }
+.show-modal{
+    color: #fff;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    margin: 200px auto 0;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: all 0.3s ease 0s;
+    
+}
+.show-modal:hover,
+.show-modal:focus{
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+.modal-dialog{
+    width: 80%;
+    margin: 70px auto 0;
+}
+.modal-dialog{ transform: scale(0.5); }
+.modal-dialog{ transform: scale(1); }
+.modal-dialog .modal-content{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+.modal-content .close{
+    color: #fff;
+    background: grey;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 27px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+    position: absolute;
+    left: auto;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+    transition: all 0.3s;
+    
+}
+.modal-content .close:hover{
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.close:focus{ outline: none; }
+.modal-body{ padding: 60px 40px 40px !important;
+ }
+.modal-body  .title{
+    color: green;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.modal-body .description{
+    color: #9A9EA9;
+    font-size: 16px;
+    padding-bottom:2%;
+    margin: 0 0 20px;
+}
+.modal-body .form-group{
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+.modal-body .input-icon{
+    color: #777;
+    font-size: 18px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.modal-body .form-control{
+    font-size: 17px;
+    height: 45px;
+    width: 100%;
+    padding: 6px 0 6px 50px;
+    margin: 0 auto;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+    background-color:whitesmoke;
+}
+.form-control:hover{
+    border: 2px solid orange!important;
+}
+.form-control::placeholder{
+    color: #AEAFB1;
+}
+.form-group.checkbox{
+    width: 130px;
+    margin-top: 0;
+    display: inline-block;
+}
+.form-group.checkbox label{
+    color: #9A9EA9;
+    font-weight: normal;
+}
+.form-group.checkbox input[type=checkbox]{
+    margin-left: 0;
+}
+.modal-body .forgot-pass{
+    color: #7F7FD5;
+    font-size: 13px;
+    text-align: right;
+    width: calc(100% - 135px);
+    margin: 2px 0;
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.3s ease 0s;
+}
+.forgot-pass:hover{
+    color: #9A9EA9;
+    text-decoration: underline;
+}
+.modal-content .modal-body .btn{
+    color:black;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 38px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+}
+.modal-content .modal-body .btn:hover{
+    color: darkgrey;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.btn-login{
+    border: 1px solid darkgray!important;
+}
+.modal-content .modal-body .btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+/*-------------------------------------Slideshow-------------------------------------------------------------*/
+.slideshow1{
+    padding-right: 5%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display:inline;
+    font-size:8vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation-name: welcome;
+    animation-duration: 4s;
+    margin-top: px;               
+                                }
+    @keyframes welcome
+    {from
+        {bottom:-200px;
+         opacity:0;
+        } 
+      to
+        {
+         bottom:-150px;
+         opacity:1;
+                    }
+                       }
+.slideshow2{
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            display:inline;
+            font-size:4vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            animation-name: slideshow2;
+            animation-duration: 4s;
+            margin-top: px;               
+                                        }
+            @keyframes slideshow2
+            {from
+                {bottom:10px;
+                 opacity:0;
+                } 
+              to
+                {
+                 bottom:-50px;
+                 opacity:1;
+                            }
+                               }
+.slideshow3{
+ clear: left;
+ position: fixed;
+ padding-right: 5%;
+ margin-top: 10%;
+ display:inline-flex;
+ font-size:4vw;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ animation-name: slideshow3;
+ animation-duration: 4s;
+ margin-top: px;               
+                             }
+ @keyframes slideshow3
+ {from
+     {bottom:-0px;
+      opacity:0;
+     } 
+   to
+     {
+      bottom:-100px;
+      opacity:1;
+                 }
+                    }                       
+.joinus{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: rgb(243, 170, 13);
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:8vw;
+    animation-name: joinus;
+    animation-duration: 4s;
+   
+    
+    ; 
+} @keyframes joinus
+{from
+    {bottom:200px;
+     opacity:0;
+    } 
+  to
+    {
+     bottom:500px;
+     opacity:1;
+                }
+                   }
+.slideshow3-des{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 110px ;
+    margin-left: 5px;
+}
+.myslides{
+    position: relative;
+    padding:100%;
+    
+}
+.slideshow-img1{
+    padding:10%;
+    width : 100%;
+}
+.slideshow-img2{
+    margin-top: 10px;
+    text-align: center;
+    max-width: 70%;
+    
+}
+
+.slideshow-img3{
+    width:30em;
+    float: left;
+    margin-top:-100px ;
+    
+}
+
+/*------------------------------------Introduction--------------------------------------------------*/
+.introduction-container{
+    
+    max-width:980px;
+    text-align:center!important;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+    padding-left: 100px;
+    padding-right:100px;
+    text-size-adjust:10px;
+    content:"";
+    display:table;
+    clear:both;
+   
+}
+.introduction-container:hover{
+    box-shadow: 5px 10px 18px #888888;
+    margin-left:10px;
+    margin-right:10px; 
+}
+.intro-row ::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+.intro-column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+/*-----------------------------------Subscribe - Card----------------------------------------*/
+.price{
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+    border:2px solid black !important;  
+    border-radius: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 5px 10px 18px #888888;
+    
+    margin-left:15%;
+    margin-right:15%;
+}
+/*-----------------------------------TREE----------------------------------------*/
+.tree{
+    box-shadow: 1px 5px 10px #888888;
+    padding: 10px 63px 10px;
+    margin-top:3%;
+    margin-bottom:3%;
+    text-align: center;
+}
+.h2-tree{
+    text-align: center;
+    width:100%!important;
+    background-color: darkgray;
+    padding-left:1%;
+    padding-right:1%;
+    border:2px solid black;
+    font:bold;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.btn-tree{
+    
+    padding:10px 90px;
+    text-align: center;
+    background-color: lightgreen;
+    align-items: center;
+    margin-left:auto;
+    font-size:100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+
+    
+}
+.btn-tree:hover{
+ padding:13px 95px;
+ border: 2px solid black;
+ 
+}
+/*----------------------------------Contact--------------------------------------*/
+.contact-container{
+    text-align: center;
+    display:table;
+    
+    
+    width:95%;
+    margin: auto;
+    margin-top: 1px; 
+    margin-bottom: 10px;
+    padding-bottom:10px;
+    padding-top:1px;
+    padding-left:40px;
+    padding-right:40px;
+
+}
+.contact-container:hover{
+    
+    
+    box-shadow: 5px 10px 18px #888888;
+}
+.contact-detail{
+    content:"";
+    display:table;
+    clear:both;
+    margin-top: 9%;
+    padding-top:px;
+    padding-bottom:32px;
+    
+    
+}
+
+.contact-detail-list{
+    
+    width:49.99999%;
+    font-size:18px;
+    margin-bottom:16px !important;;
+    clear:both;
+
+
+
+
+}
+.contact-form{
+    width:49.99999%;
+    float:right; 
+
+}
+.form-name{
+    
+    width:100%; 
+    margin-right:1%;
+   
+}
+.form-name::placeholder{
+    color: #000;
+}
+.form-email{
+    width:100%; 
+    margin-left:1%;
+    margin-right:-2%!important;
+ }
+ .form-message{
+    width: 100%;
+    margin-left:1%
+ }
+.input-text{
+    padding:8px;
+    margin-bottom:2%;
+    display:block;
+    border:none;border-bottom:1px solid #ccc;
+    width:100%;
+    border:1px solid #ccc;
+    
+}
+.input-text:hover{
+    border:2px solid orange;
+}
+
+
+.btn-submit-contact{
+    margin-top:16px;
+    margin-bottom:16px;
+    color:#fff;
+    background-color:#000;
+    float:right;
+    padding:2%;    
+}
+.btn-submit-contact:hover{
+    background-color: orange;
+    padding:2%;
+    border-radius: 20%;
+    }
+.btn-submit-contact:active{
+    background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+/*----------------------footer-------------------------*/
+.footer-logo{
+    width:12%;
+    background-color: darkgreen;
+    
+
+}
+
+.social-footer{
+    text-align:center;
+    
+    content:"";
+    display:table;
+    clear:both;
+    color:#000!important;
+    background-color:transparent;
+    font-size:24px!important;
+    width: 100%;
+    
+}
+.social-hover-opacity{
+    padding-left:5%;
+    padding-top:2%
+}
+.social-hover-opacity:hover{
+    opacity:0.60;
+    transform: translateY(-4px); 
+}
+
+
+ h1 {
+     font-size: 24px ;
+}
+ h2 {
+     font-size: 22px 
+}
+ h3 {
+     font-size: 18px 
+}
+ h4 {
+     font-size: 16px 
+}
+ h5 {
+     font-size: 14px 
+}
+ h6 {
+     font-size: 13px 
+}
+ *, *::after, *::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1 
+}
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+ button:focus {
+     outline: none;
+}
+ ul, li, ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+ p {
+     margin: 0px;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 24px;
+}
+ a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+ a, .btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ :focus {
+     outline: 0;
+}
+/*------------------------------------------------------creditcardvalidation page-------------------------*/
+.cvhome{
+    
+    background-color: transparent;
+    text-align: center;
+
+
+}
+.cv-box{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom:1%;
+    padding-left: 20%;
+    padding-right:20%;
+}
+
+
+.cvmodal-body .title{
+   color: green;
+   font-size: 33px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   margin: 0 0 10px;
+   font-family: Brush Script MT, Brush Script Std, cursive;
+}
+.cvmodal-body .description{
+   color: #9A9EA9;
+   font-size: 16px;
+   padding-bottom:2%;
+   margin: 0 0 20px;
+}
+.cvmodal-body .form-group{
+   text-align: left;
+   margin-bottom: 2px;
+
+   position: relative;
+}
+
+
+.cvmodal-body .form-control{
+   font-size: 17px;
+   height: 45px;
+   width: 100%;
+   padding: 6px 0 6px 50px;
+   margin: 0 auto;
+   border: 2px solid #eee;
+   border-radius: 5px;
+   box-shadow: none;
+   outline: none;
+   background-color:whitesmoke;
+}
+
+
+
+
+.cv-box .cvmodal-body .btn{
+   color:black;
+   background: transparent;
+   font-size: 16px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   line-height: 38px;
+   width:55%;
+   height: 40px;
+   padding: 0;
+   border: none;
+   border-radius: 5px;
+   border: none;
+   display: inline-block;
+   transition: all 0.6s ease 0s;
+}
+.cv-box .cvmodal-body .form-group #pay{
+    text-align: center;
+}
+.cv-box .cvmodal-body .btn:hover{
+   color: darkgrey;
+   letter-spacing: 2px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cv-box .cvmodal-body .btn:focus{ outline: none; }
+
+   
+
+
+
+.cv-box{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+    height:max-content;
+
+}
+.cvfooter{
+  
+    position: relative ;
+ background-color: transparent;}
+ /*------------------------------------------------------------creditcardvalidation page-----------------------------------------------------------------------------------------------------------------*/
+
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+   
